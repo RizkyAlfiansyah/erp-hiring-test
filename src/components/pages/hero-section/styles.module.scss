@@ -90,6 +90,7 @@
   .root {
     padding: 56px 0;
     & > ._icons {
+      z-index: -1;
       left: -50%;
     }
 
