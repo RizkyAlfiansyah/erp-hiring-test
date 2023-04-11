@@ -1,0 +1,87 @@
+.root {
+  position: relative;
+  width: 100vw;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: hidden;
+
+  & > ._icons {
+    position: absolute;
+    top: -35%;
+    transform: rotate(75deg);
+    left: -15%;
+    width: 500px;
+    height: 600px;
+
+    &_footer {
+      width: 55%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: rotateY(0deg);
+    }
+  }
+
+  & > ._container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  & > .content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 24px;
+    gap: 48px;
+
+    & > div:first-child {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      & > p {
+        max-width: 40%;
+        color: #0a0a0a;
+        font-size: 18px;
+        font-style: normal;
+      }
+    }
+
+    & > div {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 24px;
+      & > p {
+        color: #0a0a0a;
+        font-size: 19px;
+        text-align: center;
+        font-weight: 500;
+        font-style: italic;
+      }
+    }
+  }
+
+  .images {
+    width: 600px;
+    height: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .root {
+    & > ._icons {
+      top: -35%;
+      width: 600px;
+      height: 700px;
+    }
+  }
+}
