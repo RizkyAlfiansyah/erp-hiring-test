@@ -33,11 +33,28 @@ body {
   width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
+  overflow-x: hidden;
+
+  //hide scrollbar
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  .example::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .example {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
+  margin: 0;
 }
 
 h2 {

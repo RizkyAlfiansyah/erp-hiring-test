@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { About, ContactUs, Hero, Pricing } from '../../pages';
 import Navbar from '../navbar';
 import Styles from '../styles.module.scss';
+import { ArrowUPSVG } from '../../../assets/icons';
 
 const { root, arrow_container } = Styles;
 const MainLayout = () => {
@@ -35,23 +36,7 @@ const MainLayout = () => {
           ref.current?.scrollIntoView({ behavior: 'smooth' });
         }}
       >
-        <svg
-          width="48px"
-          height="48px"
-          strokeWidth="1.8"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          color="#fff"
-        >
-          <path
-            d="M6 15l6-6 6 6"
-            stroke="#fff"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></path>
-        </svg>
+        <ArrowUPSVG />
       </div>
       <Navbar onClick={onClick} />
       <section ref={ref}>

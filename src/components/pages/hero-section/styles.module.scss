@@ -76,12 +76,41 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .root {
     & > ._icons {
       top: -35%;
       width: 600px;
       height: 700px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .root {
+    padding: 56px 0;
+    & > ._icons {
+      left: -50%;
+    }
+
+    & > .content {
+      padding: 24px;
+      & > div:first-child {
+        & > p {
+          max-width: 100%;
+        }
+      }
+      & > div {
+        width: 100%;
+        & > p {
+          font-size: 16px;
+        }
+      }
+    }
+    .images {
+      margin: auto;
+      width: 256px;
+      height: 70%;
     }
   }
 }
